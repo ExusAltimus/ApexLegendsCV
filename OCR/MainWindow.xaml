@@ -1,0 +1,20 @@
+﻿<Window x:Class="OCR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OCR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grdShield">
+        <Button x:Name="btnStart" Content="Start OCR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="37" Width="81" Click="btnStart_Click"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Margin="182,11,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+
+        <Border BorderThickness="1" BorderBrush="Black" Margin="10,52,10,10" Background="Gainsboro">
+            <Grid>
+                <Image x:Name="imgCapture" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+            </Grid>
+        </Border>
+        <Button x:Name="btnRecalibrate" Content="Recalibrate" HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top" Height="37" Width="81" Click="btnRecalibrate_Click"/>
+    </Grid>
+</Window>
